@@ -21,11 +21,15 @@ class SelectionSort {
     
     
 	public static void main (String[] args) {
-	    int a[] = {2, 1, 4, 3};
-	    selectionSort(a, 4);
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+	    int arr[]=new int[n];
+      for(int i=0;i<n;i++)
+        {
+          arr[i]=sc.nextInt();
+        }
+      selectionSort(arr,n);
 	    
-	    for(int i = 0; i < 4; i++){
-	        System.out.print(a[i] + " ");
-	    }
+	    System.out.print(arr);
 	}
 }
